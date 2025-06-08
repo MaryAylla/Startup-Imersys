@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Nasalization';
+    src: url('fonts/Nasalization.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shine in Valentine';
+    src: url('../fonts/ShineinValentine.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baby Girly';
+    src: url('../fonts/BabyGirly.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(180deg, #001f4d 0%, #0047b3 100%);
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(175, 215, 255, 0.9);
+    border-bottom: 2px solid #cccccc;
+    padding: 10px 20px;
+}
+
+.logo-escola {
+    width: 300px;
+    height: auto;
+}
+
+.info-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #2278CF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nome-materia {
+    font-size: 1.5em;
+    margin: 0;
+    font-family: 'Nasalization', sans-serif;
+}
+
+.nome-professora {
+    margin: 0;
+    font-size: 1.1em;
+    font-style: italic;
+    font-family: 'Nasalization', sans-serif;
+}
+
+.logo {
+    width: 150px;
+}
+
+header h1 {
+    font-family: 'Nasalization', sans-serif;
+    font-size: 3em;
+    color: #2278CF;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+.titulo-folha {
+    font-family: 'Shine in Valentine', sans-serif;
+    font-size: 4em;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+
+.pagina-com-espiral {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    position: relative;
+}
+
+
+main {
+    background: url('../img/bg-folha.jpg') repeat-y center top;
+    background-size: cover;
+    max-width: 700px;
+    padding: 60px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+main::before,
+main::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bg-folha.jpg') repeat-y center top;
+    background-size: cover;
+    border-radius: 12px;
+    z-index: -1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    opacity: 0.5;
+    transform: rotate(-1deg);
+}
+
+main::after {
+    top: 20px;
+    left: 20px;
+    opacity: 0.3;
+    transform: rotate(-2deg);
+}
+
+.furinhos {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.furinhos div {
+    width: 12px;
+    height: 12px;
+    background-color: #001f4d;
+    border-radius: 50%;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.sumario {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    font-family: 'Baby Girly', sans-serif;
+    font-size: 2.3em;
+    text-align: left;
+}
+
+
+.sumario li {
+    margin: 15px 0;
+    position: relative;
+    padding-right: 30px;
+}
+
+
+.sumario a {
+    text-decoration: none;
+    color: #0047b3;
+    transition: color 0.3s;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px dotted #0047b3;
+    padding-bottom: 3px;
+}
+
+
+.sumario a::after {
+    content: '→';
+    float: right;
+    color: #0047b3;
+    font-size: 1em;
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+
+.sumario a:hover {
+    color: #66b2ff;
+    border-bottom-color: #66b2ff;
+}
+
+.sumario a:hover::after {
+    color: #66b2ff;
+    transform: translateX(5px);
+}

@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Nasalization';
+    src: url('../fonts/Nasalization.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Shine in Valentine';
+    src: url('../fonts/ShineinValentine.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cocomat';
+    src: url('../fonts/Cocomat.ttf') format('truetype');
+}
+
+
+body {
+    background: linear-gradient(180deg, #001f4d 0%, #0047b3 100%);
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(175, 215, 255, 0.9);
+    border-bottom: 2px solid #cccccc;
+    padding: 10px 20px;
+}
+
+.logo-escola {
+    width: 300px;
+    height: auto;
+}
+
+.info-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #2278CF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nome-materia {
+    font-size: 1.5em;
+    margin: 0;
+    font-family: 'Nasalization', sans-serif;
+}
+
+.nome-professora {
+    margin: 0;
+    font-size: 1.1em;
+    font-style: italic;
+    font-family: 'Nasalization', sans-serif;
+}
+
+.logo {
+    width: 150px;
+}
+
+header h1 {
+    font-family: 'Nasalization', sans-serif;
+    font-size: 3em;
+    color: #2278CF;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+
+.pagina-com-espiral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+.furinhos {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.furinhos div {
+    width: 12px;
+    height: 12px;
+    background-color: #001f4d;
+    border-radius: 50%;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+h2 {
+    font-family: 'Nasalization', sans-serif;
+    color: #2278CF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.pergunta {
+    font-family: 'Cocomat', sans-serif;
+    font-size: 1.1em;
+    color: #001f4d;
+    margin-bottom: 30px;
+}
+
+.pergunta p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pergunta label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.range-input {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #444;
+}
+
+
+.pesquisa .pergunta {
+    margin-bottom: 20px;
+    font-family: 'Cocomat', sans-serif;
+    font-size: 1.1em;
+    color: #001f4d;
+}
+
+.pesquisa .pergunta p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pesquisa .pergunta label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.pesquisa .pergunta input[type="radio"] {
+    margin-right: 8px;
+}
+
+.bolinhas {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.bolinhas label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #2278CF;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: 'Cocomat', sans-serif;
+    color: #2278CF;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.bolinhas label input[type="radio"] {
+    display: none;
+}
+
+.bolinhas label input[type="radio"]:checked+span {
+    background-color: #2278CF;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bolinhas label span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.voltar-sumario {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0047b3;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Nasalization', sans-serif;
+}
+
+.voltar-sumario:hover {
+    color: #66b2ff;
+}
